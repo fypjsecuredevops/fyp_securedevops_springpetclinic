@@ -6,7 +6,6 @@
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
   <version>2.3.0.BUILD-SNAPSHOT</version>
-  <packaging>war</packaging>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -204,7 +203,6 @@
                 <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
                 <java.source>${maven.compiler.source}</java.source>
                 <java.target>${maven.compiler.target}</java.target>
-                <finalName>sample</finalName>
               </additionalProperties>
             </configuration>
           </execution>

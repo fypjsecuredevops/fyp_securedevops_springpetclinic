@@ -1,0 +1,13 @@
+---
+- name: Deploy Kubernetes 
+  hosts: all
+  become: true
+  tasks:
+    - name: Copy Deployment File to Kubernetes Master
+      copy: 
+        src: deployment.yaml
+        dest: /root/
+    - name: Delete previous Kubernetes objects
+      command: kubectl delete -f /root/deployment.yaml
+    - name: Create new deployment 
+      command: kubectl apply -f /root/deployment.yaml

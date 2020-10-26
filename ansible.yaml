@@ -7,7 +7,7 @@
       copy: 
         src: deployment.yaml
         dest: /root/
-    - name: Delete previous Kubernetes objects
-      command: kubectl delete -f /root/deployment.yaml
+    - name: Delete deployent (if any)
+      command: kubectl delete --ignore-not-found=true -f /root/deployment.yaml
     - name: Create new deployment 
       command: kubectl apply -f /root/deployment.yaml

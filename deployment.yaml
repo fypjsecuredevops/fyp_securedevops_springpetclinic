@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: darrenchooji/springpetclinic:latest
+          image: darrenchooji/springpetclinic_devsecops:latest
           ports:
             - containerPort: 8080
           imagePullPolicy: Always

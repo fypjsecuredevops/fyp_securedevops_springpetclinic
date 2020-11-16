@@ -20,6 +20,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.samples.petclinic.vet.VetRepository;
+import org.junit.jupiter.api.Assertions;
 
 @SpringBootTest
 class PetclinicIntegrationTests {
@@ -29,8 +30,8 @@ class PetclinicIntegrationTests {
 
 	@Test
 	void testFindAll() throws Exception {
-		vets.findAll();
-		vets.findAll(); // served from cache
+		Assertions.assertNull(vets.findAll());
+		// vets.findAll(); // served from cache
 	}
 
 }

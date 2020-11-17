@@ -30,8 +30,8 @@ class PetclinicIntegrationTests {
 
 	@Test
 	void testFindAll() throws Exception {
-		Assertions.assertNull(vets.findAll());
-		// vets.findAll(); // served from cache
+		Assertions.assertNotNull(vets.findAll());
+		// vets.findAll();
 	}
 
 }

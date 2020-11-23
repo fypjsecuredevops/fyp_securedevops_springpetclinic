@@ -31,7 +31,6 @@ class PetclinicIntegrationTests {
 	@Test
 	void testFindAll() throws Exception {
 		Assertions.assertNotNull(vets.findAll());
-		// vets.findAll();
 	}
 
 }

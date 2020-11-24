@@ -1,1 +1,1 @@
-darrenchooji/insecuredocker_springpetclinic:latest /var/lib/jenkins/workspace/SpringPetclinic_InsecureDocker_Pipeline/Dockerfile
+darrenchooji/anchoredemo_springpetclinic:latest /var/lib/jenkins/workspace/SpringPetclinic_AnchoreDemo_Pipeline/Dockerfile

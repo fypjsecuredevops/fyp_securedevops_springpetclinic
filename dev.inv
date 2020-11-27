@@ -1,5 +1,5 @@
 [servers]
-server1 ansible_host=192.168.227.203
+server1 ansible_host=192.168.75.133
 
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3

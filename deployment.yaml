@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: darrenchooji/springpetclinic:latest
+          image: fypjsecuredevops/springpetclinic:latest
           ports:
             - containerPort: 8080
           imagePullPolicy: Never
